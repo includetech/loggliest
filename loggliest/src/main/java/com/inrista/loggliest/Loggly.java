@@ -421,10 +421,10 @@ public class Loggly {
             json.put("message", message);
 
             if(null != meta) {
-                Iterator<String> iterator = json.keys();
+                Iterator<String> iterator = meta.keys();
                 while (iterator.hasNext()) {
                     String key = iterator.next();
-                    json.put(key, json.get(key));
+                    json.put(key, meta.get(key));
                 }
             }
 
