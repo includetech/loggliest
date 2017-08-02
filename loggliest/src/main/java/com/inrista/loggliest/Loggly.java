@@ -684,8 +684,8 @@ public class Loggly {
                     
                     // Append default info
                     if(mAppendDefaultInfo) {
-                        msg.put("appversionname", mAppVersionName);
-                        msg.put("appversioncode", Integer.toString(mAppVersionCode));
+                        msg.put("appversion", mAppVersionName);
+                        msg.put("buildnumber", Integer.toString(mAppVersionCode));
                         msg.put("devicemodel", android.os.Build.MODEL);
                         msg.put("androidversioncode", Integer.toString(android.os.Build.VERSION.SDK_INT));
                     }
